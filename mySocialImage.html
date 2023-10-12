@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Commenting</title>
+    <link rel="stylesheet" href="mySocialImage.css">
+</head>
+<body>
+    <div id="container">
+        <div id="image-container">
+            <img id="image" src="mySocialImage.jpg" alt="Image of McDavid"> <!-- Image of McDavid -->
+            <div id="icons">
+                <span class="like-counter">0</span> ❤️  <!-- Like counter for image -->
+                <button class="like-button" title="Like">❤️</button> <!-- Like button with tooltip for image -->
+                <button class="comment-button" title="Comment">🗨️</button> <!-- Comment button with tooltip for image -->
+            </div>
+        </div>
+        <div id="comments"></div> <!-- Container for displaying comments -->
+        <div id="comment-box-container">
+            <textarea id="comment-box" placeholder="Your comment goes here"></textarea> <!-- Comment input box -->
+            <button id="post-comment-button">Post Comment</button> <!-- Button to post comment -->
+        </div>
+        <footer>
+            <div id="user-info"><span id="user-id">MBlagdon</span></div> <!-- Display user ID -->
+            <div id="date-info"><span id="current-date"></span></div> <!-- Displaying current date -->
+        </footer>
+    </div>
+    <script src="mySocialImage.js"></script>
+</body>
+</html>

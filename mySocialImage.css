@@ -1,0 +1,167 @@
+body {
+    background-image: url('nhl1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#container {
+    width: 650px;
+    height: 700px;
+    margin: 0 auto;
+    border: 5px solid gold;
+    overflow-y: auto;
+    background-color: purple;
+}
+
+#image-container {
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+#image {
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    border: 4px solid gold;
+}
+
+#icons {
+    position: absolute;
+    right: 30px;
+    bottom: 15px;
+    font-size: 20px;
+}
+
+#post-comment-button {
+    color: gold;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.like-counter,
+.like-button,
+.comment-button,
+.expand-button,
+.contract-button {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+#comment-box-container {
+    margin: 10px;
+}
+
+#comment-box {
+    width: 100%;
+    height: 25px;
+    border: 2px solid royalblue;
+    background-color: lightgray;
+    margin-top: 80px;
+}
+
+#comments {
+    padding-left: 20px;
+    margin-left: -15px;
+}
+
+.comment-content p,
+.sub-comment-content p {
+    white-space: pre-line; 
+    word-wrap: break-word; 
+}
+
+
+.comment,
+.sub-comment {
+    border: 3px solid royalblue;
+    padding: 3px;
+    margin: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;  
+    background-color: lightgoldenrodyellow; 
+    
+}
+
+.comment-header,
+.sub-comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.comment-actions {
+    display: flex;
+    align-items: center;
+}
+
+.comment-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.expand-contract {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.expand-button,
+.contract-button {
+    cursor: pointer;
+    font-size: 18px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-left: 5px;
+}
+
+
+.sub-comment-line {
+    border-left: 3px solid gold;
+    border-bottom: 3px solid gold;  
+    height: 100%; 
+    width: 10px;  
+    position: absolute;
+    top: -10px;   
+    left: -15px;    
+}
+
+
+.comment-wrapper {
+    margin: 10px;
+}
+
+.sub-comment {
+    border: 3px solid royalblue;
+    padding: 3px;
+    font-size: 14px;    
+    margin-left: 20px; 
+}
+
+[data-recallable="true"] {
+    cursor: pointer; 
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;    
+}
+
+#user-id{
+    font-weight: bold;
+    color: slateblue;
+}
+
+#current-date{
+    font-weight: bold;
+    color: slateblue
+}
